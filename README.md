@@ -21,6 +21,8 @@ pveam update
 
 # Disable warnings in the web GUI
 sed -Ezi.bak "s/(Ext.Msg.show\(\{\s+title: gettext\('No valid sub)/void\(\{ \/\/\1/g" /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js && systemctl restart pveproxy.service
+
+
 **Note: You might to clear your browser or restart after executing the command above.**
 
 # Must-have tools
