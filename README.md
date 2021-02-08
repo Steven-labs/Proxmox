@@ -4,9 +4,13 @@ This Readme includes all the changes I do on a fresh Proxmox install. Note the c
 # Change repository
 
 rm /etc/apt/sources.list.d/pve-enterprise.list
+
+
 **This deletes the enterprise repo, which requires a proxmox subscription. (If you can make sure to grab a subscription for proxmox!)**
 
 echo "deb http://download.proxmox.com/debian/pve buster pve-no-subscription" > /etc/apt/sources.list.d/pve-no-subscription.list
+
+
 **This command adds the folowing text in the columms in the right location**
 
 # Update
